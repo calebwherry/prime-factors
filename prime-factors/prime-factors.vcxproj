@@ -65,10 +65,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FileParserLib.cpp" />
     <ClCompile Include="prime-factors.cpp" />
+    <ClCompile Include="UtilsLib.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="FileIOLib.h" />
+    <ClInclude Include="FileParserLib.h" />
+    <ClInclude Include="UtilsLib.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="test-data.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

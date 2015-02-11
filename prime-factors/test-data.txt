@@ -1,0 +1,56 @@
+#
+# Only lines that can be converted to uint64_t (in base10) will make it through to figure out prime factors.
+#
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+ 
+ -1
+ -396394
+
+# This next one will overflow and not get coverted:
+8756547976756565765875647645454569968657697987870923471234512457861248612783461746513465347652837456147651084561247516240581465187465174513457182475198451345
+
+# Converts fine:
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001
+
+33
+dlfksdjf98y23rn2
+
+fj98h 2
+
+# strtoull ignores whitespace up front so the next line is fine:
+    48
+sd f     
+      
+							
+77
+							----------
+-======++++
+13
+455
+
+3498
+
+# The next line does convert since strtoull reads until the first non-valid base-n character:
+90909090909)((((((-----))))))2
+
+# Same goes for the next line:
+4394  *******
+1234
+#@@@@!!!@#@@#W
+2398643
+345576567
+
+_______________
+
+P

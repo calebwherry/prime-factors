@@ -18,10 +18,24 @@
     <ClCompile Include="prime-factors.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FileParserLib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UtilsLib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="FileIOLib.h">
+    <ClInclude Include="FileParserLib.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="UtilsLib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="test-data.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
