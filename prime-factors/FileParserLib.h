@@ -45,47 +45,47 @@
 namespace file_parser
 {
 
-	/// RAII FileParser class:
-	class FileParser
-	{
-	public:
+    /// RAII FileParser class:
+    class FileParser
+    {
+    public:
 
-		/// Default constructor:
-		FileParser() = delete;
+        /// Default constructor:
+        FileParser() = delete;
 
-		/// Custom constructor:
-		explicit FileParser(
-			const std::string& inFileName		///< File name of file to open
-		);
+        /// Custom constructor:
+        explicit FileParser(
+            const std::string& inFileName		///< File name of file to open
+        );
 
-		// Destructor:
-		~FileParser();
+        // Destructor:
+        ~FileParser();
 
 
-		//
-		// Member functions:
-		//
+        //
+        // Member functions:
+        //
 
-		/// Get the contents of the file stored in a vector, (each entry is a line).
-		std::vector<std::string> getContents() { return contents; }
+        /// Get the contents of the file stored in a vector, (each entry is a line).
+        std::vector<std::string> getContents() { return contents; }
 
-	private:
+    private:
 
-		//
-		// Member variables:
-		//
-		std::ifstream file;
-		const std::string fileName;
-		std::vector<std::string> contents;
+        //
+        // Member variables:
+        //
+        std::ifstream file;
+        const std::string fileName;
+        std::vector<std::string> contents;
 
-		//
-		// Member functions:
-		//
+        //
+        // Member functions:
+        //
 
-		/// Parse the file:
-		void parseFile();
+        /// Parse the file:
+        void parseFile();
 
-	};
+    };
 
 } // namespace file_parser
 

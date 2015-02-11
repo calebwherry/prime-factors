@@ -35,41 +35,41 @@ using namespace std;
 namespace file_parser
 {
 
-	// FileParser constructor:
-	FileParser::FileParser(
-		const string& inFileName
-		) : fileName(inFileName)
-	{
-		// Parse file:
-		this->parseFile();
-	}
+    // FileParser constructor:
+    FileParser::FileParser(
+        const string& inFileName
+        ) : fileName(inFileName)
+    {
+        // Parse file:
+        this->parseFile();
+    }
 
-	// FileParse destructor:
-	FileParser::~FileParser()
-	{
-		file.close();
-	}
+    // FileParse destructor:
+    FileParser::~FileParser()
+    {
+        file.close();
+    }
 
-	// Parse file contents:
-	void FileParser::parseFile()
-	{
-		// Open file:
-		file.open(fileName);
+    // Parse file contents:
+    void FileParser::parseFile()
+    {
+        // Open file:
+        file.open(fileName);
 
-		// Check is file was opened incorrectly:
-		if (!file.is_open())
-		{
-			throw runtime_error(string("Error: Problem(s) occured while trying to open the file: '") + fileName + string("'; aborting."));
-		}
+        // Check is file was opened incorrectly:
+        if (!file.is_open())
+        {
+            throw runtime_error(string("Error: Problem(s) occured while trying to open the file: '") + fileName + string("'; aborting."));
+        }
 
-		//
-		// Read file line by line until end:
-		//
-		string line = "";
-		while (getline(file, line))
-		{
-			contents.push_back(line);
-		}
-	}
+        //
+        // Read file line by line until end:
+        //
+        string line = "";
+        while (getline(file, line))
+        {
+            contents.push_back(line);
+        }
+    }
 
 } // namespace file_parser
