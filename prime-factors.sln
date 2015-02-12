@@ -4,6 +4,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "prime-factors", "prime-factors\prime-factors.vcxproj", "{2C3CE548-04B2-4362-B9C0-B166FCA2E892}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9D441716-7958-4CD0-A06F-E92525BFE30B} = {9D441716-7958-4CD0-A06F-E92525BFE30B}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "prime-factors-lib", "prime-factors-lib\prime-factors-lib.vcxproj", "{9D441716-7958-4CD0-A06F-E92525BFE30B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "prime-factors-tests", "prime-factors-tests\prime-factors-tests.vcxproj", "{461E0FBD-7E68-4FFC-A317-149E17960786}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9D441716-7958-4CD0-A06F-E92525BFE30B} = {9D441716-7958-4CD0-A06F-E92525BFE30B}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +25,14 @@ Global
 		{2C3CE548-04B2-4362-B9C0-B166FCA2E892}.Debug|Win32.Build.0 = Debug|Win32
 		{2C3CE548-04B2-4362-B9C0-B166FCA2E892}.Release|Win32.ActiveCfg = Release|Win32
 		{2C3CE548-04B2-4362-B9C0-B166FCA2E892}.Release|Win32.Build.0 = Release|Win32
+		{9D441716-7958-4CD0-A06F-E92525BFE30B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9D441716-7958-4CD0-A06F-E92525BFE30B}.Debug|Win32.Build.0 = Debug|Win32
+		{9D441716-7958-4CD0-A06F-E92525BFE30B}.Release|Win32.ActiveCfg = Release|Win32
+		{9D441716-7958-4CD0-A06F-E92525BFE30B}.Release|Win32.Build.0 = Release|Win32
+		{461E0FBD-7E68-4FFC-A317-149E17960786}.Debug|Win32.ActiveCfg = Debug|Win32
+		{461E0FBD-7E68-4FFC-A317-149E17960786}.Debug|Win32.Build.0 = Debug|Win32
+		{461E0FBD-7E68-4FFC-A317-149E17960786}.Release|Win32.ActiveCfg = Release|Win32
+		{461E0FBD-7E68-4FFC-A317-149E17960786}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,7 +6,8 @@
 ///	\brief		Implementation for FileParserLib.h
 ///
 ///	\notes
-///		1. ...
+///		1. RAII guarantees that when the FileParser object goes out of scope, the destructor will be called
+///			which will close the files the object controls.
 ///
 ///////////////////////////////////////
 
@@ -62,9 +63,7 @@ namespace file_parser
             throw runtime_error(string("Error: Problem(s) occured while trying to open the file: '") + fileName + string("'; aborting."));
         }
 
-        //
         // Read file line by line until end:
-        //
         string line = "";
         while (getline(file, line))
         {

@@ -6,7 +6,7 @@
 ///	\brief		FileParserLib library header
 ///
 ///	\notes
-///		1. ...
+///		1. FileParser helper library for RAII file IO classes.
 ///
 ///////////////////////////////////////
 
@@ -21,7 +21,7 @@
 //
 // Local includes:
 //
-// N/A
+//...
 
 
 //
@@ -66,6 +66,9 @@ namespace file_parser
         // Member functions:
         //
 
+		/// Get name of file.
+		std::string getFileName() { return fileName; }
+
         /// Get the contents of the file stored in a vector, (each entry is a line).
         std::vector<std::string> getContents() { return contents; }
 
@@ -78,11 +81,12 @@ namespace file_parser
         const std::string fileName;
         std::vector<std::string> contents;
 
+
         //
         // Member functions:
         //
 
-        /// Parse the file:
+        /// Parse the input file:
         void parseFile();
 
     };

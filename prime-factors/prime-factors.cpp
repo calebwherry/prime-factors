@@ -10,9 +10,9 @@
 ///			integers in Z+ \ {1} (positive integers with 1 removed) only.
 ///		2. Prime factors will only be from Z+ \ {1}.
 ///		3. We chose to design this app by seperating the file IO from the prime factors generation. This leads to
-///			a better ability to test the individual components and decouples the two activites making them completly
-///			non-dependent. This also allows us to easily use RAII when dealing with file IO. However, this
-///			could potentially be a problem if the size of the input files becomes massive. Inlining the prime factor
+///			a better ability to test the individual components and decouples the two activites making them completely
+///			non-dependent. This also allows us to easily use RAII when dealing with file IO. However, this design
+///			could potentially be a problem if the size of the input file becomes massive. Inlining the prime factor
 ///			generation with the file IO would allow for the processing of vey large files whereas we are currently limited
 ///			to the amount of data we can hold in the vector containing the file contents.
 ///
@@ -48,6 +48,8 @@ namespace fp = file_parser;
 //
 // Function prototypes:
 //
+
+/// Function to print out prime factors in specific format given a vector.
 void printPrimeFactors (
     uint64_t, 
     const vector<uint64_t>&

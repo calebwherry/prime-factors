@@ -6,7 +6,7 @@
 ///	\brief		UtilsLib library header
 ///
 ///	\notes
-///		1. ...
+///		1. Utility library for general useful functions.
 ///
 ///////////////////////////////////////
 
@@ -21,7 +21,7 @@
 //
 // Local includes:
 //
-// N/A
+//...
 
 
 //
@@ -36,7 +36,7 @@
 //
 // Namespaces:
 //
-////
+//...
 
 
 //
@@ -45,19 +45,19 @@
 namespace utils
 {
 
-    /// Function to get base name from given path.
+    /// Function to parse application name from given path.
     std::string parseApplicationName (
         const char* inPath							///< Pointer to char array with full path to parse
     );
 
 
-    /// Convert string to int64_t.
+    /// Convert string to int64_t. Returns: tuple<conversionFailed, convertedNumber>.
     std::tuple<bool,int64_t> convertStrToLL (
         const std::string& inStr					///< String to convert to int64_t
     );
 
 
-    /// Calculate prime factors of given number non-negative.
+    /// Calculate prime factors of given non-negative number.
     std::vector<uint64_t> calculatePrimeFactors (
         uint64_t inNumberToFactor					///< Number to calculate prime factors of
     );

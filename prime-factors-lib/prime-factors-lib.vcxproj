@@ -11,12 +11,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{2C3CE548-04B2-4362-B9C0-B166FCA2E892}</ProjectGuid>
-    <RootNamespace>primefactors</RootNamespace>
+    <ProjectGuid>{9D441716-7958-4CD0-A06F-E92525BFE30B}</ProjectGuid>
+    <RootNamespace>primefactorslib</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
@@ -47,7 +47,6 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -65,15 +64,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="prime-factors.cpp" />
+    <ClCompile Include="..\prime-factors\FileParserLib.cpp" />
+    <ClCompile Include="..\prime-factors\UtilsLib.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="test-data.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\prime-factors-lib\prime-factors-lib.vcxproj">
-      <Project>{9d441716-7958-4cd0-a06f-e92525bfe30b}</Project>
-    </ProjectReference>
+    <ClInclude Include="..\prime-factors\FileParserLib.h" />
+    <ClInclude Include="..\prime-factors\UtilsLib.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
