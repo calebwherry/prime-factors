@@ -39,13 +39,21 @@ install:
     fi
 
   # Main apt-get installs:
-  - sudo apt-get install python3 python3-pip
+  - sudo apt-get install python3 python-pip
 
   # Install python modules:
-  - sudo pip3 install colorama
+  - sudo pip install colorama
+
+before_script:
+
+  # Put installed colorama package in correct place for new python version. This is extremely sloppy and nasty but 
+  #  it is the quickest way I could it to work on Travis:
+  - sudo mkdir /usr/local/lib/python3.2/dist-packages/colorama/
+  - sudo cp /usr/local/lib/python2.7/dist-packages/colorama/* /usr/local/lib/python3.2/dist-packages/colorama/
 
 script:
   - "./build.py"
+  - "./build-debug/build-files/prime-factors ../../prime-factors/test-data.txt"
 
 notifications:
   recipients:
