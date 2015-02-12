@@ -15,6 +15,8 @@
 ///			could potentially be a problem if the size of the input file becomes massive. Inlining the prime factor
 ///			generation with the file IO would allow for the processing of vey large files whereas we are currently limited
 ///			to the amount of data we can hold in the vector containing the file contents.
+///     4. We chose to make one slight modification to the given requirements: the number that is being factored is output to
+///         the console followed by a colon then a comma-separated list of the prime factors, not just the factors themselves.
 ///
 ///////////////////////////////////////
 
