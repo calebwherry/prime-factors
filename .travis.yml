@@ -53,7 +53,7 @@ before_script:
 
 script:
   - "./build.py"
-  - "./build-debug/build-files/prime-factors ../../prime-factors/test-data.txt"
+  - "./build-debug/build-files/prime-factors prime-factors/test-data.txt"
 
 notifications:
   recipients:
