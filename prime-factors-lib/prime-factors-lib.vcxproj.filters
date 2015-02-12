@@ -15,19 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\prime-factors\UtilsLib.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\prime-factors\FileParserLib.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClInclude Include="UtilsLib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileParserLib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\prime-factors\UtilsLib.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\prime-factors\FileParserLib.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClCompile Include="UtilsLib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileParserLib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

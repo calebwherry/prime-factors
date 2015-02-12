@@ -36,7 +36,7 @@ const char PATH_SEPARATOR = '/';
 //
 // Local includes:
 //
-#include "../prime-factors/FileParserLib.h"
+#include "FileParserLib.h"
 
 
 //

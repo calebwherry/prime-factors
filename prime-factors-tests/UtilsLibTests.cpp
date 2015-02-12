@@ -22,7 +22,7 @@
 //
 // Local includes:
 //
-#include "../prime-factors/UtilsLib.h"
+#include "UtilsLib.h"
 
 
 //
