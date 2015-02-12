@@ -140,6 +140,9 @@ catch (const exception& e)
     // Catch std::exceptions and ones derived from it and show error message:
     cerr << endl << "Exception from main: " << endl
          << "\t" << e.what() << endl << endl;
+
+    // Return non-zero exit code:
+    return 1;
 }
 catch (...)
 {
@@ -148,6 +151,9 @@ catch (...)
     //		   DOES happen though there is not much we can do since we don't have any RTTI for the exception, it
     //		   could be anything.
     cerr << "Unknown exception was thrown from main, this should not have happened. Seek help; aborting." << endl;
+
+    // Return non-zero exit code:
+    return 1;
 }
 
 
